@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(50, 50, 50);
+    min-height: 100vh;
+}
+/*este es el header y el menu*/
+header{
+    color:orange;
+}
+nav ul li{
+    margin-bottom: 0.5em;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+nav ul li a:hover{
+    color: orange;
+}
+/*esto es el contenido de la pagina*/
+#portada{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#portada img{
+    border: solid orange 10px;
+    border-radius: 10%;
+}
+#portada h3{
+    color: white;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+#info{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#info h2{
+    margin-bottom: 0;
+}
+#info p{
+    margin-top: 0;
+}
+#info-r{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+#info-r h2{
+    margin-bottom: 0;
+}
+#info-r p{
+    margin-top: 0;
+}
+@media (max-width:600px){
+    #info{
+        display: none;
+    }
+    #info-r{
+        display: block;
+    }
+    #info-r h2{
+        font-size: small;
+    }
+    #info-r p{
+        font-size: small;
+    }
+}
+/*este es el footer*/
+footer{
+    color: orange;
+    position: sticky;
+    top: 100%;
+    width: 100%;
+}
+footer p{
+    font-size: large;
+}
+footer ul li{
+    margin-bottom: 0.5em;
+}
+footer ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+footer ul li a:hover{
+    color: orange;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                <li><a href="formacion.html">Experiencia</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="portada">
+            <img src="images/martin.jpg" width="240px" height="240px" alt="martin-coultas">
+            <h3>Martin Coultas</h3>
+        </div>
+        <div>
+            <form action="">
+                <h2>Contacto</h2>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                <label for="correo">Correo</label>
+                <input type="text" name="correo" id="correo" placeholder="Correo">
+                <label for="telefono">Telefono</label>
+                <input type="text" name="telefono" id="telefono" placeholder="Teléfono">
+                <textarea name="mensaje" placeholder="Escriba aqui su mensaje."></textarea>
+                <input type="submit" onclick="return enviarformulario()" value="ENVIAR" id="boton">
+            </form>
+            <div id="error"></div>
+            <script src="validacion.js"></script>
+        </div>
+    </main>
+    <footer>
+        <p>
+            Mis redes sociales:
+        </p>
+        <ul>
+            <li><a href="https://twitter.com">Twitter</a></li>
+            <li><a href="https://instagram.com">Instagram</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
